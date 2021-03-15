@@ -4,19 +4,20 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RemoveTest {
-    @Test
+   @Test
     public void test1() {
         // given
         PhoneBook phoneBook = new PhoneBook();
         String name = "John";
         String phoneNumber = "302-555-4545";
         phoneBook.add(name, phoneNumber);
-        Assert.assertTrue(phoneBook.hasEntry(name, phoneNumber));
+        //Assert.assertTrue(phoneBook.hasEntry(name, phoneNumber));
 
         // when
         phoneBook.remove(name);
 
         // then
+       System.out.println(phoneBook);
         Assert.assertFalse(phoneBook.hasEntry(name));
     }
 

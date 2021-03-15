@@ -11,6 +11,7 @@ public class ConstructorTest {
     @Test
     public void testNullaryConstructor() {
         // given
+
         // when
         PhoneBook phoneBook = new PhoneBook();
 
@@ -27,6 +28,7 @@ public class ConstructorTest {
         PhoneBook phoneBook = new PhoneBook(dependency);
 
         // then
+        System.out.println(phoneBook.getMap());
         Assert.assertEquals(dependency, phoneBook.getMap());
     }
 }
